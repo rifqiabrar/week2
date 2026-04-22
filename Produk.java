@@ -1,16 +1,26 @@
-package base;
+
 
 public class Produk {
     private String nama;
     String kategori;
-    protected double harga;
-    public int stok;
+    private double harga;
+    private int stok;
 
     public Produk(String nama, double harga, int stok, String kategori) {
         this.nama = nama;
         this.harga = harga;
         this.stok = stok;
         this.kategori = kategori;
+    }
+
+    public String getnama() {
+        return nama;
+    }
+    public double getharga() {
+        return harga;
+    }
+    public int getstock() {
+        return stock;
     }
     
     public void tampilINfo() {
