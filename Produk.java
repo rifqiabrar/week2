@@ -19,10 +19,17 @@ public class Produk {
     public double getharga() {
         return harga;
     }
-    public int getstock() {
-        return stock;
+    public int getstok() {
+        return stok;
     }
-    
+
+    public void setharga(double harga) {
+        this.harga = harga;
+    }
+    public void setstok(int stok) {
+        this.stok = stok;
+    }
+
     public void tampilINfo() {
         System.out.println("produk   : " + nama);
         System.out.println("kategori : " + kategori);
