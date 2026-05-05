@@ -1,12 +1,9 @@
 public class Main {
-    public static void main(String[] args) {
-        Produk p = new Produk("baju", 20000, 5, "uniqlo");
+    public static void main (String args []){
+        Elektronik mesinCuci = new Elektronik("Samsung", 2000000.0, 20, "Alat Rumah", 5);
 
-        System.out.println(p.getnama());
-        System.out.println(p.getharga());
+        mesinCuci.setGaransi(0);
+        mesinCuci.tampilInfo();
 
-        p.setharga(20000);
-        System.out.println(p.getharga());
     }
-    
 }
